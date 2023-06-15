@@ -7,7 +7,7 @@ plugins {
 group = "com.littledir.libs.android"
 
 android {
-    namespace = "com.littledir.libs.android.core"
+    namespace = "com.littledir.libs.android.compose"
     compileSdk = 33
 
     defaultConfig {
@@ -36,7 +36,10 @@ android {
 }
 
 dependencies {
-    implementation("com.littledir.libs.kotlin:core")
+    implementation("com.littledir.libs.android:core")
+    implementation(libs.core.ktx)
+    implementation(libs.appcompat)
+    implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
