@@ -18,8 +18,6 @@ fun WebView(initialUrl: String) {
 
                 loadUrl(initialUrl)
             }
-        }, update = {
-            it.loadUrl(initialUrl)
         }
     )
 }
